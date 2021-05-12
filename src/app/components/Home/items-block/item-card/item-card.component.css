@@ -1,0 +1,9 @@
+.card{
+    width: 15rem;
+}
+
+img{
+    height: 16rem;
+    width: auto;
+    object-fit: cover;
+}

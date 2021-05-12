@@ -1,19 +1,32 @@
 .container{
     padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 h3{
-    font-family: 'Oswald', sans-serif;
     color: #4c6b96;
     font-weight: bold;
     display: inline-block;
     width: 40%;
 }
 
+.login-buttons button{
+    color: #d85f30;
+    border-radius: 20px;
+    background-color: transparent;
+    border: #d85f30 1px solid;
+    font-weight: bold;
+}
+
+.login-buttons button:hover{
+    background-color: #d85f30;
+    color: white;
+}
+
 .container button{
     display: block;
     width: 100%;
-    margin: 1px;
+    margin: 2px;
 }
 
 input{
@@ -22,6 +35,8 @@ input{
     border-right: 0px;
     display: inline-block;
     width: 40%;
+    box-shadow: 2px 1px 5px black;
+
 }
 
 
