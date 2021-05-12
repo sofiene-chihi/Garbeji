@@ -1,3 +1,4 @@
+import { Input } from '@angular/core';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Garbeji';
+  dark: boolean= false;
+
+
+  change(){
+    this.dark= !this.dark;
+  }
 }
+
+

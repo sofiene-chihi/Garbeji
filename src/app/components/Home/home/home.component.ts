@@ -1,3 +1,4 @@
+import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  @Input() dark: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
+    if(this.dark){
+      document.body.classList.add('dark-theme')
+    }else{
+      document.body.classList.remove('dark-theme')
+    }
+  }
+
+  changeMode(){
+      document.body.classList.toggle('dark-theme')
   }
 
 }

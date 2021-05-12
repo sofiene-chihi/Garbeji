@@ -1,13 +1,14 @@
 app-item-card{
     display: inline-block;
-    margin-right: 3rem;
-    margin-left: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 
 h3{
     margin-left: 5px;
+    text-decoration: underline;
     margin-bottom: 2rem;
-    color: #333e5c;
+    color: var(--third-color);
     text-align: center;
     font-weight: bold;
 }
@@ -21,7 +22,7 @@ button{
     margin-top: 1rem;
     color: #d85f30;
     border-radius: 20px;
-    background-color: transparent;
+    background-color: white;
     border: #d85f30 1px solid;
     font-weight: bold;
 }

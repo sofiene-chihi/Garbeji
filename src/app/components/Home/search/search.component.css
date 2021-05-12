@@ -1,10 +1,11 @@
 .container{
-    padding-top: 3rem;
+    padding-top: 100px;
     padding-bottom: 2rem;
+    background-color: var(--first-color)
 }
 
 h3{
-    color: #4c6b96;
+    color: var(--third-color);
     font-weight: bold;
     display: inline-block;
     width: 40%;
@@ -13,9 +14,12 @@ h3{
 .login-buttons button{
     color: #d85f30;
     border-radius: 20px;
-    background-color: transparent;
+    background-color: white;
     border: #d85f30 1px solid;
     font-weight: bold;
+    display: block;
+    width: 100%;
+    margin: 2px;
 }
 
 .login-buttons button:hover{
@@ -23,8 +27,12 @@ h3{
     color: white;
 }
 
-.container button{
+.job-buttons button{
     display: block;
+    background-color: var(--fourth-color);
+    color: var(--first-color);
+    border: 0px;
+    font-weight: bold;
     width: 100%;
     margin: 2px;
 }
@@ -35,6 +43,8 @@ input{
     border-right: 0px;
     display: inline-block;
     width: 40%;
+    background-color: #F4F6F6;
+    font-weight: bold;
     box-shadow: 2px 1px 5px black;
 
 }

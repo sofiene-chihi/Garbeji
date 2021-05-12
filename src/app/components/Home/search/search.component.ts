@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-
   jobs:string[]= ["plombier", "transporteur", "designer", "boulonger", "chanteur", "prof etude", "Développeur", "Ingénieur ", "Expert ","plombier", "transporteur", "designer", "boulonger", "chanteur", "prof etude", "Développeur", "Ingénieur ", "Expert "]
 
   constructor() { }
 
   ngOnInit(): void {
+   
   }
 
 }

@@ -4,5 +4,17 @@ h3,p,h1,h2{
     font-family: 'Oswald', sans-serif;
 }
 
+:root{
+    --first-color: #fdfdfd;
+    --second-color: #F4F6F6;
+    --third-color: #333e5c;
+    --fourth-color: #4c6b96;
+}
 
+.dark-theme{
+    --first-color: #333e5c;
+    --second-color: #4c6b96;
+    --third-color: #fdfdfd;
+    --fourth-color: #F4F6F6;
+}
 

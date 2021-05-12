@@ -1,7 +1,7 @@
 .footer-clean {
     padding:50px 0;
-    background-color:#F4F6F6;
-    color:#4b4c4d;
+    background-color:var(--second-color);
+    color: var(--third-color);
   }
   
   .footer-clean h3 {
