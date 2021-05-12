@@ -1,0 +1,33 @@
+.container{
+    padding-top: 3rem;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+    color: #4c6b96;
+    font-weight: bold;
+    display: inline-block;
+    width: 40%;
+}
+
+.container button{
+    display: block;
+    width: 100%;
+    margin: 1px;
+}
+
+input{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display: inline-block;
+    width: 40%;
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    object-fit: cover;
+}
