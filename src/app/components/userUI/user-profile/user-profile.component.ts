@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-user-profile',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserProfileComponent implements OnInit {
   contact:boolean=true;
+  links=["new-service", "provided-services", "old-services"] 
   constructor() { }
 
   ngOnInit(): void {
