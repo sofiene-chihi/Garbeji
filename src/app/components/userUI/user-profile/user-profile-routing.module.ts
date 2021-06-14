@@ -12,7 +12,7 @@ const routes: Routes = [
 {path: '', component: UserProfileComponent,      
     children:[
     {path: 'new-service' ,component: NewServiceFormComponent },
-    {path: 'old-services' ,component: OldServicesComponent},
+    {path: 'history' ,component: OldServicesComponent},
     {path: 'provided-services' ,component: ProvidedServicesComponent},
     {path: '**' ,   redirectTo:'new-service'},
             

@@ -1,0 +1,30 @@
+    <div class="card">
+        <div class="card-body">
+            <div class="d-flex flex-column align-items-center text-center">
+            <img src="../../../../assets/images/profil.jpg" alt="user image" class="rounded-circle" width="150" height="150">
+            <div class="mt-3">
+                <h4> Hana Ben Ghezail</h4>
+                <p class="text-secondary mb-1"> (Student)</p>
+                <p class="text-muted font-size-sm">Centre Urbain Nord</p>
+                
+                <div class="col" style="padding: 12px;">
+                    <button class="btn btn-primary shadow-lg mr-4" type="button" *ngIf="contact" (click)="displayContact()"
+                        style="background: #d85f30;border-top-style: none;border-right-style: none;border-right-color: #d85f30;border-bottom-style: none;border-left-style: none;">
+                        Contact
+                    </button>
+                    <a *ngIf="!contact" href="tel:+18475555555">1-847-555-5555</a>
+                </div>
+        
+                <div class="col" style="padding: 12px;">
+                    <button  class="btn btn-primary shadow-lg"  type="button"
+                        data-bs-toggle="modal"  data-bs-target="#myModal"
+                        style="background: #d85f30;border-top-style: none;border-right-style: none;border-right-color: #d85f30;border-bottom-style: none;border-left-style: none;">Edit
+                        profile
+                    </button>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+

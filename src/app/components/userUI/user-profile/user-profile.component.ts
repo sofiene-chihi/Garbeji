@@ -7,15 +7,11 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./user-profile.component.css']
 })
 export class UserProfileComponent implements OnInit {
-  contact:boolean=true;
-  links=["new-service", "provided-services", "old-services"] 
+  links=["new-service", "provided-services", "history"] 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  displayContact(){
-    this.contact=!this.contact;
-  }
-
+  
 }

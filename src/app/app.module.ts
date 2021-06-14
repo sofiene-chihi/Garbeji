@@ -16,6 +16,10 @@ import { UserServicesComponent } from './components/userUI/user-services/user-se
 import { NewServiceFormComponent } from './components/userUI/new-service-form/new-service-form.component';
 import { ProvidedServicesComponent } from './components/userUI/provided-services/provided-services.component';
 import { OldServicesComponent } from './components/userUI/old-services/old-services.component';
+import { EditProfileComponent } from './components/UserUI/edit-profile/edit-profile.component';
+import { CardComponent } from './components/userUI/card/card.component';
+import { SocialsComponent } from './components/userUI/socials/socials.component';
+import { DetailsComponent } from './components/userUI/details/details.component';
 
 
 @NgModule({
@@ -32,7 +36,11 @@ import { OldServicesComponent } from './components/userUI/old-services/old-servi
     UserServicesComponent,
     NewServiceFormComponent,
     ProvidedServicesComponent,
-    OldServicesComponent
+    OldServicesComponent,
+    EditProfileComponent,
+    CardComponent,
+    SocialsComponent,
+    DetailsComponent
 
   ],
   imports: [

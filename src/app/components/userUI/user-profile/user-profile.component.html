@@ -1,66 +1,39 @@
-<div >
-    <section class="portfolio-block project-no-images" >
-        <div class=" container d-lg-flex justify-content-lg-center" >
-            <div class="row text-center d-inline-flex d-lg-flex d-xxl-flex justify-content-lg-start align-items-lg-start justify-content-xxl-center"
-                style="text-align: left;width: 100% ">
-                <div class="  offset-0"
-                    style="background: #4c6b96;padding-top: 30px;padding-bottom: 10px;border-radius: 6px;box-shadow: 0px 0px 3px;margin-bottom: 20px;">
-                    <div class="row">
-                            <div class="text-center"><img class="rounded-circle img-fluid" src="../../../../assets/images/profil.jpg"
-                                    loading="auto"
-                                    style="width: 200px;height:200px; border-radius: 102px;filter: blur(0px);border-top-style: solid;border-top-color: #333e5c;border-right-style: solid;border-right-color: #bac4c0;border-bottom: 3px solid #d85f30 ;border-left-style: solid;border-left-color: #fdfdfd;" />
-                            </div>
-                            <div>
-                                <h2 class="text-center" style="margin-top: 10px;color: #fdfdfd;text-align: center;">
-                                    Hana Ben Ghezail</h2>
-                                <h4 class="text-center" style="margin-top: 10px;color: #fdfdfd;text-align: center;">
-                                    (Student)
-                                </h4>
+<div class="container">
+    <div class=" d-lg-flex justify-content-lg-center " style="height:350px" >
+        <div class="row d-inline-flex d-lg-flex d-xxl-flex justify-content-lg-start align-items-lg-start justify-content-xxl-center"
+        style="text-align: left;width: 100% ">
+            <img src="../../../../assets/images/bg.jpg" alt="Could be portrait or landscape"
+            style=" max-height:100%;"/>
+        </div>
+    </div>
 
-                            </div>
-                            <div>
-                                <h5 class="text-center" style="margin-top: 10px;color: #fdfdfd;text-align: center;">
-                                    22 years old</h5>
-                                
-                                <div class="col" style="padding: 12px;">
-                                    <button class="btn btn-primary shadow-lg" type="button" *ngIf="contact" (click)="displayContact()"
-                                        style="background: #d85f30;border-top-style: none;border-right-style: none;border-right-color: #d85f30;border-bottom-style: none;border-left-style: none;">
-                                        Contact
-                                    </button>
-                                    <a *ngIf="!contact" href="tel:+18475555555">1-847-555-5555</a>
-                                </div>
-                                <div class="col" style="padding: 12px;">
-                                    <button data-bs-toggle="modal"  data-bs-target="#myModal"
-                                        style="background: #d85f30;border-top-style: none;border-right-style: none;border-right-color: #d85f30;border-bottom-style: none;border-left-style: none;">Edit
-                                        profile</button>
-                                </div>
-                            </div>
-                    </div>
-                </div>
+    
+    <div class=" row  gutters-sm mt-4 mr-6">
+        <div class="  d-lg-flex d-xxl-flex  align-items-lg-start "
+            style="text-align: left;width: 100% ; ">
+
+            <div class="col-md-4 mb-3 " style="margin-left: 5px;">
+                <app-card></app-card>
             </div>
-            
-        </div>
-        <div class="container  bg-light p-4 d-flex justify-content-end text-center "
-        style="padding-top: 30px;padding-bottom: 10px;border-radius: 6px;margin-bottom: 20px;">
-                <ul class="list-inline mb-0">
-                    <li class="list-inline-item">
-                        <h5 class="font-weight-bold mb-0 d-block" style="color: #d85f30;">215</h5><small class="text-muted"> <i class="fas fa-image mr-1"></i>Stars</small>
-                    </li>
-                    <li class="list-inline-item">
-                        <h5 class="font-weight-bold mb-0 d-block"  style="color: #d85f30;">745</h5><small class="text-muted"> <i class="fas fa-user mr-1"></i>Provided services</small>
-                    </li>
-                </ul>
+
+            <div class=" col " style="margin-left: 2%;" >
+                <app-details></app-details>
+
+                <app-socials></app-socials>
+    
             </div>
-        <div class="container  bg-light p-4 d-flex justify-content-end text-center px-4 py-3"
-            style="padding-top: 30px;padding-bottom: 10px;box-shadow: 0px 0px 3px;margin-bottom: 20px;">
-            <h5 class="mb-0">About:</h5>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus placeat facere hic. 
-                Ipsam animi ipsa officia non beatae qui quas nesciunt id excepturi doloremque nisi sunt, dolores ad iste itaque.</p>
+
+
+
+    
         </div>
-       
-    </section> 
-</div>
+
+    </div>
+
+
+     
+
+
 
 <ul class="container nav nav-tabs" id="myTab" role="tablist"  >
     <li class="nav-item" *ngFor="let link of links">
@@ -118,10 +91,7 @@
             </div>
 
         
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> -->
+        
         </div>
       </div>
   </div>
