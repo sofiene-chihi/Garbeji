@@ -13,6 +13,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { UserProfileComponent } from './components/userUI/user-profile/user-profile.component';
 import { UserServicesComponent } from './components/userUI/user-services/user-services.component';
+import { NewServiceFormComponent } from './components/userUI/new-service-form/new-service-form.component';
+import { ProvidedServicesComponent } from './components/userUI/provided-services/provided-services.component';
+import { OldServicesComponent } from './components/userUI/old-services/old-services.component';
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { UserServicesComponent } from './components/userUI/user-services/user-se
     InfosComponent,
     FooterComponent,
     UserProfileComponent,
-    UserServicesComponent
+    UserServicesComponent,
+    NewServiceFormComponent,
+    ProvidedServicesComponent,
+    OldServicesComponent
 
   ],
   imports: [

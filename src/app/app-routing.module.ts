@@ -7,7 +7,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
 
   { path: 'catalogue', component: HomeComponent },
-  { path: 'profile', component: UserProfileComponent }
+  { path: 'profile',
+    loadChildren:()=> import ('./components/userUI/user-profile/user-profile-routing.module').then(m=> m.userProfileRoutingModule) }
 
 
 ];
