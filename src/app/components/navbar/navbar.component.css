@@ -1,0 +1,34 @@
+
+li{
+    color: var(--fourth-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--fourth-color);
+    font-weight: bold;
+}
+
+h2{
+    color: #d85f30;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+i{
+    margin-left: 2rem;
+    margin-right: 1rem;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+i:hover{
+    color: #d85f30;
+}
+
+a:hover{
+    color: #d85f30;
+}
+

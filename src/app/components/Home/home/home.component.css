@@ -1,0 +1,8 @@
+.wrapper{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+div{
+    background-color: var(--first-color);
+}

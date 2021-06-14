@@ -1,0 +1,14 @@
+.card{
+    width: 10rem;
+    margin: 0;
+}
+
+.card-body{
+    text-align: center;
+}
+
+img{
+    height: 12rem;
+    width: auto;
+    object-fit: cover;
+}
