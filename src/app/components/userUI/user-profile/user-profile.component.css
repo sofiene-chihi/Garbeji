@@ -1,0 +1,19 @@
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 0px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+a{
+    color: black;
+    text-decoration-line:  none ;
+}
+
+li.stats{
+  font-size: 1.2em;
+ }

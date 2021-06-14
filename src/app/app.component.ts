@@ -14,6 +14,20 @@ export class AppComponent {
   change(){
     this.dark= !this.dark;
   }
+
+
+  ngOnInit(): void {
+    if(this.dark){
+      document.body.classList.add('dark-theme')
+    }else{
+      document.body.classList.remove('dark-theme')
+    }
+  }
+
+  changeMode(){
+      document.body.classList.toggle('dark-theme')
+  }
+
 }
 
 

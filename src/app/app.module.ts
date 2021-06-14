@@ -10,6 +10,10 @@ import { ItemsBlockComponent } from './components/Home/items-block/items-block.c
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { InfosComponent } from './components/Home/infos/infos.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { UserProfileComponent } from './components/userUI/user-profile/user-profile.component';
+import { UserServicesComponent } from './components/userUI/user-services/user-services.component';
+
 
 @NgModule({
   declarations: [
@@ -20,11 +24,15 @@ import { FooterComponent } from './components/footer/footer.component';
     ItemCardComponent,
     ItemsBlockComponent,
     InfosComponent,
-    FooterComponent
+    FooterComponent,
+    UserProfileComponent,
+    UserServicesComponent
+
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
