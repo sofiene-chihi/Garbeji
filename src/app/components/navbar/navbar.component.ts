@@ -25,6 +25,7 @@ export class NavbarComponent implements OnInit {
   @Output() changeTheme = new EventEmitter();
 
   top=0;
+  
   constructor() { }
 
   ngOnInit(): void {

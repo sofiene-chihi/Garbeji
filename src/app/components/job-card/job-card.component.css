@@ -1,6 +1,18 @@
 .card{
+    height: 25rem;
     width: 15rem; 
     border: 1px solid; 
     border-color: #d85f30;
     margin-bottom: 25px;
+}
+
+.card-text{
+    font-size: small;
+}
+
+.btn{
+    background-color: #333E5C;
+    color: white;
+    border-color: #333E5C;
+    border-radius: 30px;
 }

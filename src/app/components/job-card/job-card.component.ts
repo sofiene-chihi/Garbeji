@@ -1,5 +1,6 @@
+import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-
+import { JobOffer } from 'src/app/services/fetch-data/fetch-data.service'
 @Component({
   selector: 'app-job-card',
   templateUrl: './job-card.component.html',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JobCardComponent implements OnInit {
 
-  constructor() { }
+  @Input() jobOffer: JobOffer;
+  
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
   }

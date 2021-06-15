@@ -1,19 +1,16 @@
 <app-search-bar></app-search-bar>
-<div class="d-flex justify-content-center">
+<div class="container-fluid d-flex justify-content-center">
     <hr class="w-50"></div>
-<div class="d-flex justify-content-center" style="padding: 40px;">
+<div class="container-fluid d-flex justify-content-center" style="padding: 40px;">
     <div class="row">
-        <div class="col margin">
-            <app-job-card></app-job-card>
-            <app-job-card></app-job-card>
+        <div class="col">
+            <app-job-card *ngFor="let job of jobsOfColumn1" [jobOffer]="job"></app-job-card>
         </div>
         <div class="col">
-            <app-job-card></app-job-card>
-            <app-job-card></app-job-card>
+            <app-job-card *ngFor="let job of jobsOfColumn2" [jobOffer]="job"></app-job-card>
         </div>
         <div class="col">
-            <app-job-card></app-job-card>
-            <app-job-card></app-job-card>  
+            <app-job-card *ngFor="let job of jobsOfColumn3" [jobOffer]="job"></app-job-card>
         </div>
     </div>
 </div>
