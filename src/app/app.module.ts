@@ -15,12 +15,11 @@ import { UserProfileComponent } from './components/userUI/user-profile/user-prof
 import { UserServicesComponent } from './components/userUI/user-services/user-services.component';
 import { NewServiceFormComponent } from './components/userUI/new-service-form/new-service-form.component';
 import { ProvidedServicesComponent } from './components/userUI/provided-services/provided-services.component';
-import { OldServicesComponent } from './components/userUI/old-services/old-services.component';
 import { EditProfileComponent } from './components/UserUI/edit-profile/edit-profile.component';
 import { CardComponent } from './components/userUI/card/card.component';
 import { SocialsComponent } from './components/userUI/socials/socials.component';
 import { DetailsComponent } from './components/userUI/details/details.component';
-
+import { HttpClientModule}  from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -36,17 +35,18 @@ import { DetailsComponent } from './components/userUI/details/details.component'
     UserServicesComponent,
     NewServiceFormComponent,
     ProvidedServicesComponent,
-    OldServicesComponent,
     EditProfileComponent,
     CardComponent,
     SocialsComponent,
-    DetailsComponent
+    DetailsComponent,
+    
 
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

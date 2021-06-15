@@ -17,6 +17,16 @@ table {
     padding: 6px; 
   }
 
+	.delbtn  {
+	margin-inline: 27%;
+	color: #d85f30;
+	text-decoration-line: none;
+	}
+
+	.delbtn:active, .delbtn:focus  {
+		outline: none  !important;
+		box-shadow: none;
+		}
 
   /*
 Max width before this PARTICULAR accounts gets nasty

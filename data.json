@@ -1,0 +1,17 @@
+{
+
+  "services": [
+    { "id": 1, "name": "learn", "category": "study", "worktime":"dimanche", "price":100, "availability":true, "description":"lorem uiojsin"},
+    { "id": 2, "name": "najra", "category": "7erfa", "worktime":"dimanche", "price":150, "availability":true, "description":"lorem uiojsin"},
+    { "id": 3, "name": "abc", "category": "study", "worktime":"samedi", "price":100, "availability":false, "description":"this is false"},
+    { "id": 4, "name": "ade", "category": "study", "worktime":"lundi", "price":100, "availability":false, "description":"this is false"},
+    { "id": 5, "name": "sdfs", "category": "study", "worktime":"dimanche", "price":100, "availability":true, "description":"lorem uiojsin"}
+    ],
+    
+    "users": [
+        { "id": 1, "firstName": "hanah", "lastName": "ben ghezail", "email":"hanah@gmail.com", "password":"hanah"},
+        { "id": 2, "firstName": "hana", "lastName": "ben asker", "email":"hana@gmail.com", "password":"hana"},
+        { "id": 3, "firstName": "yassine", "lastName": "chamkhi", "email":"yassine@gmail.com", "password":"yassine"},
+        { "id": 4, "firstName": "sofiene", "lastName": "chihi", "email":"sofiene@gmail.com", "password":"sofiene"}
+    ]
+}

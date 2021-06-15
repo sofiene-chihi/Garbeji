@@ -1,34 +1,27 @@
 <table class="row-border hover">
-    <thead class="thead">
-      <tr>
-        <!-- <th *ngFor="let row of dataModel">
-          {{row.title}}
-        </th> -->
-        <th>col 1</th>
-        <th>col 2</th>
-        <th>col 3</th>
-        
-      </tr>
-    </thead>
+  <thead class="thead">
+    
+      <th >id</th>
+      <th>name</th>
+      <th>category</th> 
+      <th>worktime</th>
+      <th>price</th>
+  </thead>
+
     <tbody>
-        <!-- <tr *ngFor="let acc of currentAccs  ">
-          <td *ngFor="let row of dataModel">{{ acc[row.key]}}</td>
-          <ng-container *ngIf="buttons.length > 0" >
-          <td  *ngFor="let b of buttons" >
-            <button type="button"  style="margin-inline: 27%;" class="btn btn-info" 
-            (click)="newItemEvent.emit(acc)">{{ b }}</button> 
+        <tr *ngFor="let ser of services  " style="max-height: max-content;">
+          <td>{{ ser.id}}</td>
+          <td>{{ ser.name}}</td>
+          <td>{{ ser.category}}</td>
+          <td>{{ ser.worktime}}</td>
+          <td>{{ ser.price}}</td>
+          
+          <td  >
+            <button type="button"   class="btn btn-link delbtn" >
+              delete
+            </button> 
           </td>
-          </ng-container>
-        </tr> -->
-        <tr>
-            <td>data </td>
-            <td>more data</td>
-            <td>more more data</td>
         </tr>
-        <tr>
-            <td>data </td>
-            <td>more data</td>
-            <td>more more data</td>
-        </tr>
+        
     </tbody>
   </table>

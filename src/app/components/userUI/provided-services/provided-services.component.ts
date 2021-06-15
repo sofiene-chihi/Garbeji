@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LaborService } from 'src/app/services/labor.service';
 
 @Component({
   selector: 'app-provided-services',
@@ -6,10 +7,45 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./provided-services.component.css']
 })
 export class ProvidedServicesComponent implements OnInit {
+  services;
+  buttons=["Show details"]
 
-  constructor() { }
+  dataModel = [{
+    title: '#',
+    key: 'id'
+  },
+  {
+    title: 'name',
+    key: 'name'
+  },
+  {
+    title: 'category',
+    key: 'category'
+  },
+  {
+    title: 'worktime',
+    key: 'worktime'
+  },
+  ,
+  {
+    title: 'price',
+    key: 'price'
+  },
+
+  
+  ]
+
+  constructor(private laborService:LaborService) { }
 
   ngOnInit(): void {
+    this.refresh();
   }
 
+  refresh(){
+    this.laborService.all().subscribe(res=> {
+
+      this.services=res ;
+      console.log(this.services)
+    })
+  }
 }

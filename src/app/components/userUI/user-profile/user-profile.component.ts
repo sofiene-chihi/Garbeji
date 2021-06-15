@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { LaborService } from 'src/app/services/labor.service';
 
 @Component({
   selector: 'app-user-profile',
@@ -7,11 +8,17 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./user-profile.component.css']
 })
 export class UserProfileComponent implements OnInit {
-  links=["new-service", "provided-services", "history"] 
-  constructor() { }
+  links=["new-service", "provided-services"] 
+
+
+  constructor(private laborService: LaborService) { }
 
   ngOnInit(): void {
+   // this.refresh();
   }
 
+
+
+  
   
 }
