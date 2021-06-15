@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Hire me - Brand</title>
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=fcc7530c6e94a0b49a06db360829a594">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="/assets/css/styles.min.css?h=35f7a002f41b496134d29ed0ebe00c9b">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+</head>
+
+<body>
+  <main class="page hire-me-page">
+    <section class="portfolio-block hire-me">
+      <div class="container">
+        <div class="heading">
+          <h2 style="color: #333e5c;">Sign Up</h2>
+        </div>
+        <form #signUpForm="ngForm">
+            <div class="mb-3 form-group">
+              <label class="form-label" for="firstname">Firstname</label>
+              <input ngModel required  name="firstname" class="form-control" type="text" id="firstname">
+            </div>
+
+            <div class="mb-3 form-group">
+                <label class="form-label" for="lastname">Lastname</label>
+                <input ngModel required name="lastname" class="form-control" type="text" id="lastname">
+            </div>
+        
+            <div class="mb-3 form-group">
+                <label class="form-label" for="email">Email</label>
+                <input ngModel required #emailInput="ngModel" name="email" email class="form-control" type="email"
+                  id="email">
+                <div class="alert alert-danger" *ngIf="emailInput.invalid && emailInput.dirty">
+                  Please enter a valid email address
+                </div>
+            </div>
+
+            <div class="mb-3 form-group">
+                <label class="form-label" for="password">Password</label>
+                <input required #passInput="ngModel" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" ngModel
+                  name="password" class="form-control" type="password" id="password">
+                <div class="alert alert-danger" *ngIf="passInput.invalid && passInput.dirty">
+                  Minimum eight characters, at least one letter and one number.
+                </div>
+            </div>
+            
+            <div class="col-auto col-sm-12 offset-sm-0 text-center align-self-center order-first mx-auto"
+            style="margin-top: 19px;">
+                <button (click)="signUp(signUpForm)" [disabled]="signUpForm.invalid" class="btn btn-primary text-start" type="submit"
+              style="background: #d85f30;border-top-color: #d85f30;border-right-color: #d85f30;border-bottom-color: #d85f30;border-left-color: #d85f30;">Sign
+              Up</button>
+            </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+  <script src="/assets/js/script.min.js?h=0464ed88042dca071baed6aedf41462e"></script>
+</body>
+
+</html>

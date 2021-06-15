@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "Garbeji"
+  "defaultProject": "Garbeji",
+  "cli": {
+    "analytics": "4533b4b8-e35b-4352-aabf-d73e055ad4a9"
+  }
 }
