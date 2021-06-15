@@ -3,60 +3,70 @@
       "offer_id": 1,
       "title": "Yassine Mongus",
       "description": "Yassine wearing red with red bg.",
-      "imageUrl":"../../../assets/img/sus-square.jpg"
+      "imageUrl":"../../../assets/img/sus-square.jpg",
+      "category":"Mongus"
     },
     {
         "offer_id": 2,
         "title": "Yassine is Labib",
         "description": "Yassine being a professional labib and being very clean",
-        "imageUrl":"../../../assets/img/labib-square.jpg"
+        "imageUrl":"../../../assets/img/labib-square.jpg",
+        "category":"Labib"
     },
     {
         "offer_id": 3,
         "title": "Yassine Photographing",
         "description": "Yassine photo-making.",
-        "imageUrl":"../../../assets/img/fun-square.jpg"
+        "imageUrl":"../../../assets/img/fun-square.jpg",
+        "category":"Photographing"
       },
       {
         "offer_id": 4,
         "title": "Yassine Photographing",
         "description": "Yassine photo-making.",
-        "imageUrl":"../../../assets/img/fun-square.jpg"
+        "imageUrl":"../../../assets/img/fun-square.jpg",
+        "category":"Photographing"
       },
       {
         "offer_id": 5,
         "title": "Yassine Mongus",
         "description": "Yassine wearing red with red bg.",
-        "imageUrl":"../../../assets/img/sus-square.jpg"
+        "imageUrl":"../../../assets/img/sus-square.jpg",
+        "category":"Mongus"
       },
       {
         "offer_id": 6,
         "title": "Yassine is Labib",
         "description": "Yassine being a professional labib and being very clean",
-        "imageUrl":"../../../assets/img/labib-square.jpg"
+        "imageUrl":"../../../assets/img/labib-square.jpg",
+        "category":"Labib"
       },
       {
         "offer_id": 7,
         "title": "Yassine Mongus",
         "description": "Yassine wearing red with red bg.",
-        "imageUrl":"../../../assets/img/sus-square.jpg"
+        "imageUrl":"../../../assets/img/sus-square.jpg",
+        "category":"Mongus"
       },
       {
         "offer_id": 8,
         "title": "Yassine Mongus",
         "description": "Yassine wearing red with red bg.",
-        "imageUrl":"../../../assets/img/sus-square.jpg"
+        "imageUrl":"../../../assets/img/sus-square.jpg",
+        "category":"Mongus"
       },
       {
         "offer_id": 9,
         "title": "Yassine is Labib",
         "description": "Yassine being a professional labib and being very clean",
-        "imageUrl":"../../../assets/img/labib-square.jpg"
+        "imageUrl":"../../../assets/img/labib-square.jpg",
+        "category":"Labib"
       },
       {
         "offer_id": 10,
         "title": "Yassine Photographing",
         "description": "Yassine photo-making.",
-        "imageUrl":"../../../assets/img/fun-square.jpg"
+        "imageUrl":"../../../assets/img/fun-square.jpg",
+        "category":"Photographing"
       }
   ]
