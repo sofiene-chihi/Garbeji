@@ -1,4 +1,4 @@
-import { Output } from '@angular/core';
+import { Input, Output } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import {EventEmitter} from '@angular/core';
 
@@ -9,13 +9,13 @@ import {EventEmitter} from '@angular/core';
 })
 export class SearchBarComponent implements OnInit {
 
-  categories: Array<string>= [
-    "Mongus",
-    "Photographing",
-    "Labib"
-  ]
+  @Input() categories: Array<string>;
 
   @Output() categoryChoiceEvent = new EventEmitter<string>();
+  @Output() keywordSearchEvent = new EventEmitter<string>();
+
+  @Input() keyword: string;
+  @Output() keywordChange = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit(): void {
@@ -24,4 +24,9 @@ export class SearchBarComponent implements OnInit {
   chosenCategory(specifiedCategory: string){
     this.categoryChoiceEvent.emit(specifiedCategory)
   }
+
+  keywordSearch(value: string){
+    this.keywordSearchEvent.emit(value);
+  }
+  
 }

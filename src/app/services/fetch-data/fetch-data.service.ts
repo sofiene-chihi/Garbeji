@@ -1,13 +1,18 @@
 import { Injectable } from '@angular/core';
-import data from '../../../assets/data/dummy-data.json';
+import { HttpClient } from '@angular/common/http';
 
 //l'interface qui modélise l'offre de travail
 export interface JobOffer{
-offer_id: Number,
-title: string,
+id: Number,
+userId: Number,
+name: string,
+worktime_start: string,
+worktime_end: string,
+price: Number,
+category: string,
+availability: string,
 description: string,
-imageUrl: string,
-category: string
+imageUrl: string
 }
 
 @Injectable({
@@ -15,9 +20,12 @@ category: string
 })
 
 export class FetchDataService {
-  //Organisation des offres dans un tableau
-   jobs: Array<JobOffer>;
-  constructor() {
-    this.jobs = Array.from(data);
+  constructor(private http:HttpClient) {
     }
+
+    getJobOffers(){
+      return this.http.get<JobOffer[]>("http://localhost:3000/jobOffers");
+    }
+
+
 }
