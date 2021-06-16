@@ -20,6 +20,8 @@ import { SocialsComponent } from './components/userUI/socials/socials.component'
 import { DetailsComponent } from './components/userUI/details/details.component';
 import { HttpClientModule}  from '@angular/common/http'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CardComponent,
     SocialsComponent,
     DetailsComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
