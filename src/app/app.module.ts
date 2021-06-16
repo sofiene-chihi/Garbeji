@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchComponent } from './components/Home/search/search.component';
@@ -22,6 +21,9 @@ import { HttpClientModule}  from '@angular/common/http'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { SearchBarComponent } from './components/catalog-ui/search-bar/search-bar.component';
+import { JobCardComponent } from './components/catalog-ui/job-card/job-card.component';
+import { CatalogBodyComponent } from './components/catalog-ui/catalog-body/catalog-body.component';
 
 @NgModule({
   declarations: [
@@ -51,8 +53,11 @@ import { RegisterComponent } from './components/register/register.component';
     FontAwesomeModule,
     ReactiveFormsModule,
     FormsModule,
-
+    SearchBarComponent,
+    JobCardComponent,
+    CatalogBodyComponent
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

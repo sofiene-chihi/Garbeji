@@ -1,0 +1,124 @@
+{
+"jobOffers": [
+    {
+        "id": 1,
+        "name": "Yassine Mongus",
+        "description": "Yassine wearing red with red bg.",
+        "imageUrl":"../../../assets/img/sus-square.jpg",
+        "category":"Mongus",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+    },
+    {
+        "id": 2,
+        "name": "Yassine is Labib",
+        "description": "Yassine being a professional labib and being very clean",
+        "imageUrl":"../../../assets/img/labib-square.jpg",
+        "category":"Labib",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+    },
+    {
+        "id": 3,
+        "name": "Yassine Photographing",
+        "description": "Yassine photo-making.",
+        "imageUrl":"../../../assets/img/fun-square.jpg",
+        "category":"Photographing",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      },
+      {
+        "id": 4,
+        "name": "Yassine Photographing",
+        "description": "Yassine photo-making.",
+        "imageUrl":"../../../assets/img/fun-square.jpg",
+        "category":"Photographing",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      },
+      {
+        "id": 5,
+        "name": "Yassine Mongus",
+        "description": "Yassine wearing red with red bg.",
+        "imageUrl":"../../../assets/img/sus-square.jpg",
+        "category":"Mongus",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      },
+      {
+        "id": 6,
+        "name": "Yassine is Labib",
+        "description": "Yassine being a professional labib and being very clean",
+        "imageUrl":"../../../assets/img/labib-square.jpg",
+        "category":"Labib",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      },
+      {
+        "id": 7,
+        "name": "Yassine Mongus",
+        "description": "Yassine wearing red with red bg.",
+        "imageUrl":"../../../assets/img/sus-square.jpg",
+        "category":"Mongus",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      },
+      {
+        "id": 8,
+        "name": "Yassine Mongus",
+        "description": "Yassine wearing red with red bg.",
+        "imageUrl":"../../../assets/img/sus-square.jpg",
+        "category":"Mongus",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      },
+      {
+        "id": 9,
+        "name": "Yassine is Labib",
+        "description": "Yassine being a professional labib and being very clean",
+        "imageUrl":"../../../assets/img/labib-square.jpg",
+        "category":"Labib",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      },
+      {
+        "id": 10,
+        "name": "Yassine Photographing",
+        "description": "Yassine photo-making.",
+        "imageUrl":"../../../assets/img/fun-square.jpg",
+        "category":"Photographing",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      }
+  ]
+  }
