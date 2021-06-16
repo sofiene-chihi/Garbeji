@@ -4,8 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { SearchBarComponent } from './components/catalog-ui/search-bar/search-bar.component';
 import { JobCardComponent } from './components/catalog-ui/job-card/job-card.component';
 import { CatalogBodyComponent } from './components/catalog-ui/catalog-body/catalog-body.component';
@@ -13,8 +11,6 @@ import { CatalogBodyComponent } from './components/catalog-ui/catalog-body/catal
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    FooterComponent,
     SearchBarComponent,
     JobCardComponent,
     CatalogBodyComponent
