@@ -11,7 +11,7 @@ h3{
     width: 40%;
 }
 
-.login-buttons button{
+.btn1{
     color: #d85f30;
     border-radius: 20px;
     background-color: white;
@@ -21,6 +21,19 @@ h3{
     width: 100%;
     margin: 2px;
 }
+
+.btn2{
+    color: white;
+    border-radius: 20px;
+    background-color: #d85f30;
+    border: #d85f30 1px solid;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin: 2px;
+}
+
+
 
 .login-buttons button:hover{
     background-color: #d85f30;
