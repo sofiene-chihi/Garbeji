@@ -45,7 +45,14 @@ export class ProvidedServicesComponent implements OnInit {
     this.laborService.all().subscribe(res=> {
 
       this.services=res ;
-      console.log(this.services)
+    })
+  }
+
+  deleteService(id){
+    console.log(id)
+    this.laborService.deleteService(id).subscribe(res=>{
+      console.log("deleted");
+      this.refresh();
     })
   }
 }

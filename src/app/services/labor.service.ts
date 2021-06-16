@@ -13,6 +13,14 @@ export class LaborService {
 
 
   all(){
-   return  this.http.get(`${URL}/services`);
+    return  this.http.get(`${URL}/services`);
+  }
+
+  deleteService(id){
+    return  this.http.delete(`${URL}/services/${id}`);
+  }
+
+  addService(newService){
+    return  this.http.post(`${URL}/services`, newService);
   }
 }

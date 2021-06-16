@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./socials.component.css']
 })
 export class SocialsComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -3,7 +3,7 @@
         <div class="row d-inline-flex d-lg-flex d-xxl-flex justify-content-lg-start align-items-lg-start justify-content-xxl-center"
         style="text-align: left;width: 100% ">
             <img src="../../../../assets/images/bg.jpg" alt="Could be portrait or landscape"
-            style=" max-height:100%;"/>
+            style=" max-height:100%; object-fit: cover;"/>
         </div>
     </div>
 
@@ -13,13 +13,15 @@
             style="text-align: left;width: 100% ; ">
 
             <div class="col-md-4 mb-3 " style="margin-left: 5px;">
-                <app-card></app-card>
+                <app-card [profile]="profile"></app-card>
             </div>
 
             <div class=" col " style="margin-left: 2%;" >
-                <app-details></app-details>
-
-                <app-socials></app-socials>
+                <ng-container *ngIf="profile">
+                    <app-details [profile]="profile"></app-details>
+                    <app-socials></app-socials> 
+                </ng-container>
+               
     
             </div>
 
@@ -58,40 +60,60 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <div class="mb-3">
+            <form [formGroup]="profileForm" (ngSubmit)="onSubmit(profileForm , formDirective)" #formDirective="ngForm">
+                <div class="mb-3">
 
-                <div class="text-center"><img class="rounded-circle img-fluid" src="../../../../assets/images/profil.jpg"
-                        loading="auto"
-                        style="width: 200px;height:150px; border-radius: 102px;filter: blur(0px);border-top-style: solid;border-top-color: #333e5c;border-right-style: solid;border-right-color: #bac4c0;border-bottom: 3px solid #d85f30 ;border-left-style: solid;border-left-color: #fdfdfd;" />
-                        <label for="file-upload" class="custom-file-upload"
-                        style="color: #333e5c; right:10%; font-size:1.5rem;" >
-                            edit
-                        </label>
-                        <input type="file"  id="file-upload">
+                    <div class="text-center"><img class="rounded-circle img-fluid" src="../../../../assets/images/hana.png"
+                            loalding="auto"
+                            style="width: 200px;height:150px; border-radius: 102px;filter: blur(0px);border-top-style: solid;border-top-color: #333e5c;border-right-style: solid;border-right-color: #bac4c0;border-bottom: 3px solid #d85f30 ;border-left-style: solid;border-left-color: #fdfdfd;" />
+                            <label for="file-upload" class="custom-file-upload"
+                            style="color: #333e5c; right:10%; font-size:1.5rem;" >
+                                edit
+                            </label>
+                            <input type="file"  id="file-upload">
+                    </div>
                 </div>
-            </div>
+    
+                <div class="mb-4">
+                    <label>FirstName </label>
+                    <input type="text" class="form-control  " id="firstname"
+                        formControlName="firstname" name="firstname">      
+        
+                </div>
+                <div class="mb-4">
+                    <label>LastName </label>
+                    <input type="text" class="form-control  " id="lastname"
+                    formControlName="lastname" name="lastname">      
+                    
+                </div>
+                <div class="mb-4">
+                    <label>Profession </label>
+                    <input type="text" class="form-control  " id="profession"
+                    formControlName="profession" name="profession">      
+       
+                </div>
 
-            <div class="mb-4"><input type="text" class="form-control" name="Firstname"
-                placeholder="Firstname" /></div>
-            <div class="mb-4"><input type="text" class="form-control" name="Lastname"
-                placeholder="Lastname" /></div>
-            <div class="mb-4"><input type="phone" class="form-control"
-                    placeholder="phone" /></div>
-            <div class="mb-4"><input type="password" class="form-control"
-                placeholder="Password" /></div>
-            
-            <div class="mb-3 modal-footer ">
+                <div class="mb-4">
+                    <label>Phone </label>
+                    <input type="text" class="form-control  " id="phone"
+                    formControlName="phone" name="phone">      
+                </div>
+                
                 <button class="btn btn-primary center" type="submit"
-                style="background: #d85f30;border-style: none;border-bottom-style: none; margin-right: 1%;">Update</button>
-
+                    style="background: #d85f30;border-style: none;border-bottom-style: none; margin-right: 1%;">
+                    Update
+                </button>
+                
                 <button type="button"  class="btn btn-secondary" 
                 style="background: #d85f30;border-style: none;border-bottom-style: none;"
-                data-bs-dismiss="modal">Cancel</button>
-
-            </div>
-
-        
+                data-bs-dismiss="modal">
+                Cancel
+            </button>
+            </form>
+            
+           
+            
         
         </div>
-      </div>
+    </div>
   </div>

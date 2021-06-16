@@ -20,6 +20,7 @@ import { CardComponent } from './components/userUI/card/card.component';
 import { SocialsComponent } from './components/userUI/socials/socials.component';
 import { DetailsComponent } from './components/userUI/details/details.component';
 import { HttpClientModule}  from '@angular/common/http'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,10 @@ import { HttpClientModule}  from '@angular/common/http'
     FontAwesomeModule,
     AppRoutingModule,
     HttpClientModule,
+    FontAwesomeModule,
+    ReactiveFormsModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,17 +1,98 @@
 {
-
   "services": [
-    { "id": 1, "name": "learn", "category": "study", "worktime":"dimanche", "price":100, "availability":true, "description":"lorem uiojsin"},
-    { "id": 2, "name": "najra", "category": "7erfa", "worktime":"dimanche", "price":150, "availability":true, "description":"lorem uiojsin"},
-    { "id": 3, "name": "abc", "category": "study", "worktime":"samedi", "price":100, "availability":false, "description":"this is false"},
-    { "id": 4, "name": "ade", "category": "study", "worktime":"lundi", "price":100, "availability":false, "description":"this is false"},
-    { "id": 5, "name": "sdfs", "category": "study", "worktime":"dimanche", "price":100, "availability":true, "description":"lorem uiojsin"}
-    ],
-    
-    "users": [
-        { "id": 1, "firstName": "hanah", "lastName": "ben ghezail", "email":"hanah@gmail.com", "password":"hanah"},
-        { "id": 2, "firstName": "hana", "lastName": "ben asker", "email":"hana@gmail.com", "password":"hana"},
-        { "id": 3, "firstName": "yassine", "lastName": "chamkhi", "email":"yassine@gmail.com", "password":"yassine"},
-        { "id": 4, "firstName": "sofiene", "lastName": "chihi", "email":"sofiene@gmail.com", "password":"sofiene"}
-    ]
+    {
+      "id": 1,
+      "name": "learn",
+      "category": "study",
+      "worktime": "dimanche",
+      "price": 100,
+      "availability": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ui,ojsin"
+    },
+    {
+      "id": 2,
+      "name": "najra",
+      "category": "7erfa",
+      "worktime": "dimanche",
+      "price": 150,
+      "availability": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ui,ojsin"
+    },
+    {
+      "id": 3,
+      "name": "abc",
+      "category": "study",
+      "worktime": "samedi",
+      "price": 100,
+      "availability": false,
+      "description": "this is false"
+    },
+    {
+      "id": 4,
+      "name": "ade",
+      "category": "study",
+      "worktime": "lundi",
+      "price": 100,
+      "availability": false,
+      "description": "this is false"
+    },
+    {
+      "name": "s",
+      "category": "s",
+      "worktime": "ss",
+      "price": 1,
+      "availability": true,
+      "description": "sss",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "hanah",
+      "lastName": "ben ghezail",
+      "email": "hanah@gmail.com",
+      "phone": "98653214",
+      "address": "Omrane",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  ",
+      "profession": "student",
+      "stars": 15,
+      "image": "hanah.png",
+      "password": "hanah"
+    },
+    {
+      "id": 2,
+      "firstName": "hana",
+      "lastName": "ben asker",
+      "email": "hana@gmail.com",
+      "phone": "98653000",
+      "address": "Bizerte",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  ",
+      "profession": "student",
+      "stars": 10,
+      "image": "hana.png",
+      "password": "hana"
+    },
+    {
+      "firstname": "yassine",
+      "lastname": "chamkhi",
+      "profession": "flutter developper",
+      "phone": "98651400",
+      "email": "yassine@gmail.com",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "firstName": "sofiene",
+      "lastName": "chihi",
+      "email": "sofiene@gmail.com",
+      "phone": "98653214",
+      "address": "Megrine",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  ",
+      "profession": "web dev",
+      "stars": 150,
+      "image": "sofiene.png",
+      "password": "sofiene"
+    }
+  ]
 }

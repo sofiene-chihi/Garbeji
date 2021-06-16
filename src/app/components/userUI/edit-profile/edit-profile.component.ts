@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {User} from '../../../Models/User.model';
+import { FormGroup,FormControl , Validators, FormBuilder, FormGroupDirective } from '@angular/forms';
+import { UserService } from '../../../services/user.service';
+
 
 @Component({
   selector: 'app-edit-profile',
@@ -7,9 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditProfileComponent implements OnInit {
 
-  constructor() { }
+  constructor(private userService:UserService,  private formBuilder: FormBuilder) { }
+
+
+ 
+ 
+
+
 
   ngOnInit(): void {
+   
   }
 
 }
