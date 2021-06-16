@@ -22,7 +22,7 @@ import { CatalogBodyComponent } from './components/catalog-ui/catalog-body/catal
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

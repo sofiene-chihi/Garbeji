@@ -9,12 +9,12 @@ import { JobOffer } from 'src/app/services/fetch-data/fetch-data.service'
 export class JobCardComponent implements OnInit {
 
   @Input() jobOffer: JobOffer;
+    modalId: string;
   
   constructor() { 
-    
   }
 
   ngOnInit(): void {
+    this.modalId= "#offerModal"+this.jobOffer.id.toString();    
   }
-
 }
