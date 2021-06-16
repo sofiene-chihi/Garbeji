@@ -20,8 +20,4 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  changeMode(){
-      document.body.classList.toggle('dark-theme')
-  }
-
 }
