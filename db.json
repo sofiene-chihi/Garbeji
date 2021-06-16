@@ -1,0 +1,19 @@
+{
+  "users": [
+    
+    {
+      "email": "me@hell",
+      "password": "$2a$10$LPg1ZtiEhj9UMdxy0S3WPOjHCOT1AUqySzyzCxsFxjujJzPalyZZm",
+      "firstname": "Hana",
+      "lastname": "Ben Asker ",
+      "id": 11
+    },
+    {
+      "email": "maryamaryam3003@gmail.com",
+      "password": "$2a$10$dptB9AtqA8cZfXR8xvxX6eq5zSl.95srno5KyxkBdvHKJnBYilJQG",
+      "firstname": "Hana",
+      "lastname": "Ben Asker ",
+      "id": 12
+    }
+  ]
+}

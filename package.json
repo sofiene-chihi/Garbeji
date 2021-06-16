@@ -20,12 +20,15 @@
     "@angular/platform-browser-dynamic": "~11.0.5",
     "@angular/router": "~11.0.5",
     "bootstrap": "^5.0.1",
+    "json-server": "^0.16.3",
+    "json-server-auth": "^2.0.2",
+   
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1100.5",
+    "@angular-devkit/build-angular": "^12.0.4",
     "@angular/cli": "~11.0.5",
     "@angular/compiler-cli": "~11.0.5",
     "@types/jasmine": "~3.6.0",
@@ -33,7 +36,7 @@
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.7.1",
     "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~5.1.0",
+    "karma": "^6.3.4",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",

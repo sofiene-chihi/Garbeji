@@ -22,7 +22,7 @@
         <div class="heading">
           <h2 style="color: #333e5c;margin-top: 1px;">Login</h2>
         </div>
-        <form #loginForm="ngForm" style="padding-top: 50px;margin-top: -27px;">
+        <form #loginForm="ngForm" style="padding-top: 50px;margin-top: -27px;" (ngSubmit)="login(loginForm.value)">
 
           <div class="mb-3 form-group" style="text-align: left;">
             <label class="form-label" for="email">Email</label>
@@ -49,7 +49,7 @@
           <div class="mb-3">
             <div class="row">
               <div class="col-sm-12 offset-sm-0" style="margin-top: 19px;">
-                <button [disabled]="loginForm.invalid" (click)="login(loginForm)" class="btn btn-primary" type="submit"
+                <button [disabled]="loginForm.invalid"  class="btn btn-primary" type="submit"
                   style="max-width: 75%;padding-right: 40px;padding-left: 40px;background: #d85f30;border-top-color: #d85f30;border-right-color: #d85f30;border-bottom-color: #d85f30;border-left-color: #d85f30;">
                   Login
                 </button>
@@ -60,7 +60,8 @@
             <div class="row text-center">
               <div class="col" style="font-size: 25px;">
                 <small style="font-size: 16px;">Don't have an account ?</small>
-                <a class="btn btn-link" role="button" style="font-size: 16px;">Sign Up</a>
+                <!-- Add a route to sign up -->
+                <a  class="btn btn-link" role="button" style="font-size: 16px;">Sign Up</a>
               </div>
             </div>
           </div>

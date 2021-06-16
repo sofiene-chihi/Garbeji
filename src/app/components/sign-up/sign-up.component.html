@@ -21,7 +21,7 @@
         <div class="heading">
           <h2 style="color: #333e5c;">Sign Up</h2>
         </div>
-        <form #signUpForm="ngForm">
+        <form #signUpForm="ngForm" (ngSubmit)="signUp(signUpForm.value)">
             <div class="mb-3 form-group">
               <label class="form-label" for="firstname">Firstname</label>
               <input ngModel required  name="firstname" class="form-control" type="text" id="firstname">

@@ -5,6 +5,12 @@
 export const environment = {
   production: false
 };
+export const BASE_URL = 'http://localhost:3000/';
+
+/*export const ROUTES = {
+  //Add home route
+  home:
+}*/
 
 /*
  * For easier debugging in development mode, you can import the following file
