@@ -5,10 +5,11 @@ import { userProfileModule } from './components/userUI/user-profile/user-profile
 import { UserProfileComponent } from './components/userUI/user-profile/user-profile.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { CatalogBodyComponent } from './components/catalog-ui/catalog-body/catalog-body.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'catalogue', component: HomeComponent },
+  { path: 'catalogue', component: CatalogBodyComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
 

@@ -44,18 +44,18 @@ import { CatalogBodyComponent } from './components/catalog-ui/catalog-body/catal
     DetailsComponent,
     LoginComponent,
     RegisterComponent,
+    SearchBarComponent,
+    JobCardComponent,
+    CatalogBodyComponent
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule,
     AppRoutingModule,
     HttpClientModule,
     FontAwesomeModule,
     ReactiveFormsModule,
     FormsModule,
-    SearchBarComponent,
-    JobCardComponent,
-    CatalogBodyComponent
+
   ],
 
   providers: [],

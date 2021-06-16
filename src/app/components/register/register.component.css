@@ -1,0 +1,9 @@
+section{
+    padding-bottom: 2rem;
+}
+
+form{
+    padding: 1rem;
+    border: 1px solid #d85f30 ;
+    border-radius: 8px;
+}
