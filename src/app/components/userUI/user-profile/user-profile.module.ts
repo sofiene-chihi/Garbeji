@@ -14,4 +14,4 @@ import { EditProfileComponent } from '../edit-profile/edit-profile.component';
     userProfileRoutingModule
   ]
 })
-export class CometteModule { }
+export class userProfileModule { }

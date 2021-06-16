@@ -15,7 +15,6 @@ import { UserProfileComponent } from './components/userUI/user-profile/user-prof
 import { UserServicesComponent } from './components/userUI/user-services/user-services.component';
 import { NewServiceFormComponent } from './components/userUI/new-service-form/new-service-form.component';
 import { ProvidedServicesComponent } from './components/userUI/provided-services/provided-services.component';
-import { EditProfileComponent } from './components/UserUI/edit-profile/edit-profile.component';
 import { CardComponent } from './components/userUI/card/card.component';
 import { SocialsComponent } from './components/userUI/socials/socials.component';
 import { DetailsComponent } from './components/userUI/details/details.component';
@@ -36,12 +35,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UserServicesComponent,
     NewServiceFormComponent,
     ProvidedServicesComponent,
-    EditProfileComponent,
     CardComponent,
     SocialsComponent,
     DetailsComponent,
-    
-
   ],
   imports: [
     BrowserModule,
