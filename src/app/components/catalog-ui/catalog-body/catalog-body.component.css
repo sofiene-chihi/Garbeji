@@ -16,3 +16,11 @@
 .jobsrow{
     margin: auto;
 }
+
+.lign{
+    background-color: var(--first-color);
+}
+
+.jobs{
+    background-color: var(--first-color);
+}

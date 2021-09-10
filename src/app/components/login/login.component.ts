@@ -8,7 +8,7 @@ import { FormGroup,FormControl , Validators, FormBuilder, FormGroupDirective } f
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  constructor(private authServ: AuthentificationService,
+  constructor(private authService: AuthentificationService,
     private formBuilder: FormBuilder,        
     private router:Router ) {}
 
@@ -29,18 +29,19 @@ export class LoginComponent implements OnInit {
 
   get f(){ return this.loginForm.controls; }
 
-
   onSubmit() {
     this.submitted = true;
     
     if(this.loginForm.valid){
       console.log(this.loginForm.value);
-      
-      // this.authServ.login(this.loginForm.value).subscribe((res)=>{
-      //    // localStorage.setItem('token', res["data"].token);
-      //     console.log("loggedin")
-      //     //this.router.navigate(['profile/2']); 
-      // });
+      console.log(JSON.stringify(this.loginForm.value))
+      this.authService.login(this.loginForm.value).subscribe((res)=>{
+         // localStorage.setItem('token', res["data"].token);
+          console.log("loggedin")
+          console.log(res)
+          localStorage.setItem("token",res.access_token)
+          this.router.navigate(['/profile/'+res.user.id]); 
+      });
     } else{
       console.log(this.loginForm.valid);
       console.log(this.loginForm.value);

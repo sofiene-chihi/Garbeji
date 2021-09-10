@@ -1,7 +1,7 @@
-<section class="portfolio-block hire-me" style="margin-top: 10%;">
+<section class="portfolio-block hire-me">
     <div class="container">
       <div class="heading">
-        <h1 style="color: #333e5c;margin-bottom: 4%; text-align: center; font-weight: bold;">Sign Up</h1>
+        <h1>Sign Up</h1>
       </div>
       <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
         <div class="mb-3 form-group">
@@ -63,14 +63,12 @@
               <label class="form-label" for="email">Email</label>
               <input  name="email" class="form-control" type="email"
                 id="email"formControlName="email"
-                class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f.email?.errors }"
                 placeholder="Enter email"
                 >
                 <div *ngIf="submitted && f.email?.errors" class="invalid-feedback">
                   <div *ngIf="f.email.errors?.required">email is required</div>
                 </div>
-              
           </div>
 
           <div class="mb-3 form-group">
@@ -86,12 +84,6 @@
                 </div>
             
           </div>
-
-             
-        <div class="mb-3 form-group">
-          <label class="form-label" for="bio">bio</label>
-          <textarea   name="bio" class="form-control" type="text" id="bio"></textarea>
-        </div>
           
           <div class="col-auto col-sm-12 offset-sm-0 text-center align-self-center order-first mx-auto"
           style="margin-top: 19px;">

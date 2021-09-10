@@ -3,7 +3,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 
-const BASE_URL="http://localhost:3000"
+
+const BASE_URL="http://localhost:3000/auth"
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +22,8 @@ export class AuthentificationService {
 
   signUp(userData) {
     //return this.http.post<any>(`${BASE_URL}signup`, userData);
-    console.log("signup done")
+    return this.http.post<any>(`${BASE_URL}/register`, userData);
+
   }
 
   logout(): void{

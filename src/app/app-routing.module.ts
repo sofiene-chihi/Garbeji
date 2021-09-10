@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/Home/home/home.component';
-import { userProfileModule } from './components/userUI/user-profile/user-profile.module';
-import { UserProfileComponent } from './components/userUI/user-profile/user-profile.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CatalogBodyComponent } from './components/catalog-ui/catalog-body/catalog-body.component';
+import { 
+  AuthGuardService as AuthGuard 
+} from '../app/services/authGuard/auth-guard.service';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,7 +15,9 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
 
   { path: 'profile/:id',
-    loadChildren:()=> import ('./components/userUI/user-profile/user-profile.module').then(m=> m.userProfileModule) }
+    loadChildren:()=> import ('./components/userUI/user-profile/user-profile.module').then(m=> m.userProfileModule),
+    canActivate: [AuthGuard] 
+  }
 ];
 
 

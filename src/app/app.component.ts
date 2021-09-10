@@ -24,10 +24,6 @@ export class AppComponent {
     }
   }
 
-  changeMode(){
-      document.body.classList.toggle('dark-theme')
-  }
-
 }
 
 

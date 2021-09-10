@@ -12,8 +12,7 @@ const routes: Routes = [
     children:[
     {path: 'new-service' ,component: NewServiceFormComponent },
     {path: 'provided-services' ,component: ProvidedServicesComponent},
-    {path: '**' ,   redirectTo:'new-service'},
-            
+    {path: '**' ,   redirectTo:'new-service'}
     ]
 },
 

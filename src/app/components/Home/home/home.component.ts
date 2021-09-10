@@ -1,5 +1,7 @@
+import { ThrowStmt } from '@angular/compiler';
 import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-home',
@@ -10,9 +12,13 @@ export class HomeComponent implements OnInit {
 
   @Input() dark: boolean;
 
-  constructor() { }
+  constructor( private userService : UserService) { }
 
   ngOnInit(): void {
+
+    this.userService.all().subscribe((users)=>{
+      console.log(users)
+    })
     if(this.dark){
       document.body.classList.add('dark-theme')
     }else{

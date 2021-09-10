@@ -24,6 +24,13 @@ import { RegisterComponent } from './components/register/register.component';
 import { SearchBarComponent } from './components/catalog-ui/search-bar/search-bar.component';
 import { JobCardComponent } from './components/catalog-ui/job-card/job-card.component';
 import { CatalogBodyComponent } from './components/catalog-ui/catalog-body/catalog-body.component';
+import { JwtModule, JwtModuleOptions } from '@auth0/angular-jwt';
+
+const JWT_Module_Options: JwtModuleOptions = {
+  config: {
+
+  }
+};
 
 @NgModule({
   declarations: [
@@ -55,6 +62,7 @@ import { CatalogBodyComponent } from './components/catalog-ui/catalog-body/catal
     FontAwesomeModule,
     ReactiveFormsModule,
     FormsModule,
+    JwtModule.forRoot(JWT_Module_Options)
 
   ],
 

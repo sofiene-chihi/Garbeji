@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { JobOffer } from './fetch-data/fetch-data.service';
+import { JobOffer } from './fetch-data.service';
 
 @Injectable({
   providedIn: 'root'

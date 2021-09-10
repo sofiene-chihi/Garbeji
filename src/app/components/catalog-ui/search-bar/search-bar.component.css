@@ -28,3 +28,7 @@
     border-color: #6d6c6c;
     border-radius: 50px;
   }
+
+  .el{
+    background-color: var(--first-color);  
+  }

@@ -12,15 +12,15 @@ export class UserService {
   constructor(private http:HttpClient) { }
 
   all(){
-    return  this.http.get(`${URL}/users`);
-  }
-
-  addUser(newUser){
-    return  this.http.post(`${URL}/users`, newUser);
+    return  this.http.get(`${URL}/users/all`);
   }
 
   getUserById(id){
-    return  this.http.get(`${URL}/users/${id}`);
+    return  this.http.get(`${URL}/users/${id}`,{
+      headers :
+      { Authorization: `Bearer ${localStorage.getItem("token")}` } 
+      
+    });
 
   }
 

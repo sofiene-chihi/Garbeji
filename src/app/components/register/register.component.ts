@@ -26,7 +26,7 @@ export class RegisterComponent implements OnInit {
   });
 
 
-  constructor(private authServ: AuthentificationService,private formBuilder: FormBuilder, private userService:UserService ) { }
+  constructor(private authService: AuthentificationService,private formBuilder: FormBuilder, private userService:UserService ) { }
 
   get f(){ return this.registerForm.controls; }
 
@@ -35,10 +35,10 @@ export class RegisterComponent implements OnInit {
       firstName: ['', [Validators.required, Validators.minLength(4)]],
       lastName: ['', [Validators.required, Validators.minLength(4)]],
       phone: ['', [Validators.required, Validators.minLength(4)]],
-      bio: ['', [Validators.required, Validators.minLength(4)]],
+      bio: ['', [ Validators.minLength(4)]],
       profession: ['', [Validators.required, Validators.minLength(4)]],
-      image: ['', [Validators.required, Validators.minLength(4)]],
-      stars: [0, [Validators.required, Validators.minLength(4)]],
+      img_url: ['', [ Validators.minLength(4)]],
+      stars: [0, [ Validators.minLength(4)]],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(4)]],
   });
@@ -51,7 +51,9 @@ export class RegisterComponent implements OnInit {
     
     if(this.registerForm.valid){
       console.log(this.registerForm.value);
-      this.userService.addUser(this.registerForm.value)
+      this.authService.signUp(this.registerForm.value).subscribe((user)=>{
+        console.log("user", user)
+      })
       // this.authServ.login(this.loginForm.value).subscribe((res)=>{
       //    // localStorage.setItem('token', res["data"].token);
       //     console.log("loggedin")

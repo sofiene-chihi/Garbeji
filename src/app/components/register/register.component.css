@@ -2,8 +2,22 @@ section{
     padding-bottom: 2rem;
 }
 
-form{
-    padding: 1rem;
-    border: 1px solid #d85f30 ;
-    border-radius: 8px;
+
+.hire-me{
+    background-color: var(--first-color);
+    overflow: hidden;
+    min-height: 700px;
+    padding-top: 5%;
 }
+
+h1{
+    color: var(--third-color);
+    margin-bottom: 4%; 
+    text-align: center; 
+    font-weight: bold;
+}
+
+label{
+    color: var(--third-color);
+}
+

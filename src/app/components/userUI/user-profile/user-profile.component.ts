@@ -11,6 +11,8 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./user-profile.component.css']
 })
 export class UserProfileComponent implements OnInit {
+
+
   links=["new-service", "provided-services"] 
   profile;
   submitted=false;
@@ -49,7 +51,7 @@ export class UserProfileComponent implements OnInit {
         console.log("updated succesfully")
         console.log(res);
         this.submitted=false;
-
+        
         if (res["code"]===200){
           
         }
@@ -67,8 +69,6 @@ export class UserProfileComponent implements OnInit {
       profession:[this.profile.profession ,  [Validators.required ,  Validators.maxLength(30)]], 
       phone:[this.profile.phone ,  [Validators.required,Validators.minLength(8) , Validators.maxLength(8) ,  Validators.pattern('^[0-9]*$') ]],
       email: [this.profile.email, [Validators.required, Validators.email]],
-
-
     })
     console.log(this.profile)
   

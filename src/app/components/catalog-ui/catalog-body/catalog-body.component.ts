@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FetchDataService, JobOffer } from 'src/app/services/fetch-data/fetch-data.service';
+import { FetchDataService, JobOffer } from 'src/app/services/fetch-data.service';
 import { SearchService } from 'src/app/services/search.service';
 @Component({
   selector: 'app-catalog-body',
