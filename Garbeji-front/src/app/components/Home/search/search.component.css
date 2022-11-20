@@ -1,0 +1,71 @@
+.container{
+    padding-top: 100px;
+    padding-bottom: 2rem;
+    background-color: var(--first-color)
+}
+
+h3{
+    color: var(--third-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 40%;
+}
+
+.btn1{
+    color: #d85f30;
+    border-radius: 20px;
+    background-color: white;
+    border: #d85f30 1px solid;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin: 2px;
+}
+
+.btn2{
+    color: white;
+    border-radius: 20px;
+    background-color: #d85f30;
+    border: #d85f30 1px solid;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin: 2px;
+}
+
+
+
+.login-buttons button:hover{
+    background-color: #d85f30;
+    color: white;
+}
+
+.job-buttons button{
+    display: block;
+    background-color: var(--fourth-color);
+    color: var(--first-color);
+    border: 0px;
+    font-weight: bold;
+    width: 100%;
+    margin: 2px;
+}
+
+input{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display: inline-block;
+    width: 40%;
+    background-color: #F4F6F6;
+    font-weight: bold;
+    box-shadow: 2px 1px 5px black;
+
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    object-fit: cover;
+}

@@ -1,0 +1,16 @@
+<app-search-bar (categoryChoiceEvent)="chooseByCategory($event)" (keywordSearchEvent)="searchByKeyword($event)" [categories]="generateCategories()"> </app-search-bar>
+<div class="container-fluid d-flex justify-content-center lign">
+    <hr class="w-50"></div>
+<div class="container-fluid d-flex justify-content-center jobs" style="padding: 40px;">
+    <div class="row jobsrow">
+        <div class="col jobscol">
+            <app-job-card *ngFor="let job of jobsOfColumn[0]" [jobOffer]="job"></app-job-card>
+        </div>
+        <div class="col jobscol ">
+            <app-job-card *ngFor="let job of jobsOfColumn[1]" [jobOffer]="job"></app-job-card>
+        </div>
+        <div class="col jobscol">
+            <app-job-card *ngFor="let job of jobsOfColumn[2]" [jobOffer]="job"></app-job-card>
+        </div>
+    </div>
+</div>

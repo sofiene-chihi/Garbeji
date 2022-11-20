@@ -1,0 +1,27 @@
+<table class="row-border hover">
+  <thead class="thead">
+    
+      <th >id</th>
+      <th>name</th>
+      <th>category</th> 
+      <th>worktime</th>
+      <th>price</th>
+  </thead>
+
+    <tbody>
+        <tr *ngFor="let ser of services  " style="max-height: max-content;">
+          <td>{{ ser.id}}</td>
+          <td>{{ ser.name}}</td>
+          <td>{{ ser.category}}</td>
+          <td>{{ ser.worktime}}</td>
+          <td>{{ ser.price}}</td>
+          
+          <td  >
+            <button type="button"   class="btn btn-link delbtn" (click)="deleteService(ser.id)">
+              delete
+            </button> 
+          </td>
+        </tr>
+        
+    </tbody>
+  </table>

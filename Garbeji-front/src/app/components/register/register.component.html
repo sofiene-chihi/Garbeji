@@ -1,0 +1,96 @@
+<section class="portfolio-block hire-me">
+    <div class="container">
+      <div class="heading">
+        <h1>Sign Up</h1>
+      </div>
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3 form-group">
+          <label class="form-label" for="firstname">Firstname</label>
+          <input name="firstname" class="form-control" type="text" id="firstname"
+          formControlName="firstName"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f.email?.errors }"
+          placeholder="Enter firstName"
+          >
+          <div *ngIf="submitted && f.firstName?.errors" class="invalid-feedback">
+            <div *ngIf="f.firstName.errors?.required">firstName is required</div>
+          </div>
+
+        </div>
+
+        <div class="mb-3 form-group">
+          <label class="form-label" for="lastname">Lastname</label>
+          <input name="lastName" class="form-control" type="text" id="lastname" formControlName="lastName"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f.email?.errors }"
+          placeholder="Enter lastName"
+          >
+          <div *ngIf="submitted && f.lastName?.errors" class="invalid-feedback">
+            <div *ngIf="f.lastName.errors?.required">lastName is required</div>
+          </div>
+
+        </div>
+      
+        <div class="mb-3 form-group">
+          <label class="form-label" for="phone">Phone</label>
+          <input   name="phone" class="form-control" type="text" id="phone" 
+          formControlName="phone"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f.phone?.errors }"
+          placeholder="Enter phone"
+          >
+          <div *ngIf="submitted && f.phone?.errors" class="invalid-feedback">
+            <div *ngIf="f.phone.errors?.required">phone is required</div>
+          </div>
+
+        </div>
+
+        
+        <div class="mb-3 form-group">
+          <label class="form-label" for="profession">Profession</label>
+          <input  name="profession" class="form-control" type="text" id="profession" formControlName="profession"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f.profession?.errors }"
+          placeholder="Enter profession"
+          >
+          <div *ngIf="submitted && f.profession?.errors" class="invalid-feedback">
+            <div *ngIf="f.profession.errors?.required">profession is required</div>
+          </div>
+        </div>
+
+
+          <div class="mb-3 form-group">
+              <label class="form-label" for="email">Email</label>
+              <input  name="email" class="form-control" type="email"
+                id="email"formControlName="email"
+                [ngClass]="{ 'is-invalid': submitted && f.email?.errors }"
+                placeholder="Enter email"
+                >
+                <div *ngIf="submitted && f.email?.errors" class="invalid-feedback">
+                  <div *ngIf="f.email.errors?.required">email is required</div>
+                </div>
+          </div>
+
+          <div class="mb-3 form-group">
+              <label class="form-label" for="password">Password</label>
+              <input 
+                name="password" class="form-control" type="password" id="password" formControlName="password"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.password?.errors }"
+                placeholder="Enter password"
+                >
+                <div *ngIf="submitted && f.password?.errors" class="invalid-feedback">
+                  <div *ngIf="f.password.errors?.required">password is required</div>
+                </div>
+            
+          </div>
+          
+          <div class="col-auto col-sm-12 offset-sm-0 text-center align-self-center order-first mx-auto"
+          style="margin-top: 19px;">
+              <button class="btn btn-primary text-start" type="submit"
+            style="background: #d85f30;border-top-color: #d85f30;border-right-color: #d85f30;border-bottom-color: #d85f30;border-left-color: #d85f30;">Sign
+            Up</button>
+          </div>
+      </form>
+    </div>
+  </section>

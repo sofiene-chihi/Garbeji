@@ -1,0 +1,19 @@
+.card{
+    height: 25rem;
+    width: 15rem; 
+    border: 1px solid; 
+    border-color: #d85f30;
+    margin-bottom: 25px;
+    background-color: var(--second-color);
+}
+
+.card-text{
+    font-size: small;
+}
+
+.btn{
+    background-color: var(--third-color);
+    color: var(--first-color);
+    border-color: var(--third-color);
+    border-radius: 30px;
+}

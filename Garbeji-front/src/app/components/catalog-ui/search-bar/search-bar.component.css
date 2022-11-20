@@ -1,0 +1,34 @@
+
+  /* Style the search box inside the navigation bar */
+  .sinput{
+    float: center;
+    padding: 6px 6px 6px 15px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border: 2px solid;
+    border-radius: 20px;
+    outline: none;
+    border-color: #d85f30;
+  }
+  
+  .search-categories{
+    font-weight: bold;
+  }
+
+  .search-categories-elt{
+    color: rgb(131, 131, 131);
+  }
+
+  .btn-light{
+    color: #929191;
+    width: 100%;
+    font-size: small;
+    border: 1px solid;
+    border-color: #6d6c6c;
+    border-radius: 50px;
+  }
+
+  .el{
+    background-color: var(--first-color);  
+  }

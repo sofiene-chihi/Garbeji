@@ -1,0 +1,221 @@
+
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "learn",
+      "category": "study",
+      "worktime": "dimanche",
+      "price": 100,
+      "availability": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ui,ojsin"
+    },
+    {
+      "id": 2,
+      "name": "najra",
+      "category": "7erfa",
+      "worktime": "dimanche",
+      "price": 150,
+      "availability": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ui,ojsin"
+    },
+    {
+      "id": 3,
+      "name": "abc",
+      "category": "study",
+      "worktime": "samedi",
+      "price": 100,
+      "availability": false,
+      "description": "this is false"
+    },
+    {
+      "id": 4,
+      "name": "ade",
+      "category": "study",
+      "worktime": "lundi",
+      "price": 100,
+      "availability": false,
+      "description": "this is false"
+    },
+    {
+      "name": "s",
+      "category": "s",
+      "worktime": "ss",
+      "price": 1,
+      "availability": true,
+      "description": "sss",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "hanah",
+      "lastName": "ben ghezail",
+      "email": "hanah@gmail.com",
+      "phone": "98653214",
+      "address": "Omrane",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  ",
+      "profession": "student",
+      "stars": 15,
+      "image": "hanah.png",
+      "password": "hanah"
+    },
+    {
+      "id": 2,
+      "firstName": "hana",
+      "lastName": "ben asker",
+      "email": "hana@gmail.com",
+      "phone": "98653000",
+      "address": "Bizerte",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  ",
+      "profession": "student",
+      "stars": 10,
+      "image": "hana.png",
+      "password": "hana"
+    },
+    {
+      "firstname": "yassine",
+      "lastname": "chamkhi",
+      "profession": "flutter developper",
+      "phone": "98651400",
+      "email": "yassine@gmail.com",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "firstName": "sofiene",
+      "lastName": "chihi",
+      "email": "sofiene@gmail.com",
+      "phone": "98653214",
+      "address": "Megrine",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  ",
+      "profession": "web dev",
+      "stars": 150,
+      "image": "sofiene.png",
+      "password": "sofiene"
+    }
+  ],
+  "jobOffers": [
+    {
+        "id": 1,
+        "name": "Yassine Mongus",
+        "description": "Yassine wearing red with red bg.",
+        "imageUrl":"../../../assets/img/sus-square.jpg",
+        "category":"Mongus",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+    },
+    {
+        "id": 2,
+        "name": "Yassine is Labib",
+        "description": "Yassine being a professional labib and being very clean",
+        "imageUrl":"../../../assets/img/labib-square.jpg",
+        "category":"Labib",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+    },
+    {
+        "id": 3,
+        "name": "Yassine Photographing",
+        "description": "Yassine photo-making.",
+        "imageUrl":"../../../assets/img/fun-square.jpg",
+        "category":"Photographing",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      },
+      {
+        "id": 4,
+        "name": "Yassine Photographing",
+        "description": "Yassine photo-making.",
+        "imageUrl":"../../../assets/img/fun-square.jpg",
+        "category":"Photographing",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      },
+      {
+        "id": 5,
+        "name": "Yassine Mongus",
+        "description": "Yassine wearing red with red bg.",
+        "imageUrl":"../../../assets/img/sus-square.jpg",
+        "category":"Mongus",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      },
+      {
+        "id": 6,
+        "name": "Yassine is Labib",
+        "description": "Yassine being a professional labib and being very clean",
+        "imageUrl":"../../../assets/img/labib-square.jpg",
+        "category":"Labib",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      },
+      {
+        "id": 7,
+        "name": "Yassine Mongus",
+        "description": "Yassine wearing red with red bg.",
+        "imageUrl":"../../../assets/img/sus-square.jpg",
+        "category":"Mongus",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      },
+      {
+        "id": 8,
+        "name": "Yassine Mongus",
+        "description": "Yassine wearing red with red bg.",
+        "imageUrl":"../../../assets/img/sus-square.jpg",
+        "category":"Mongus",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      },
+      {
+        "id": 9,
+        "name": "Yassine is Labib",
+        "description": "Yassine being a professional labib and being very clean",
+        "imageUrl":"../../../assets/img/labib-square.jpg",
+        "category":"Labib",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      },
+      {
+        "id": 10,
+        "name": "Yassine Photographing",
+        "description": "Yassine photo-making.",
+        "imageUrl":"../../../assets/img/fun-square.jpg",
+        "category":"Photographing",
+        "userId": "null",
+        "worktime_start": "null",
+        "worktime_end": "null",
+        "price": "null",
+        "availability": "null"
+      }
+  ]
+}

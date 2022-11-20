@@ -1,0 +1,71 @@
+<section class="portfolio-block hire-me" style="transform: scale(1);text-align: center; padding-top: 10%;">
+    <div class="container">
+        <div class="heading">
+            <h2>Login</h2>
+        </div>
+
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" style="padding-top: 50px;padding-top: -27px;">
+
+    <div class="mb-3 form-group" style="text-align: left;">
+        <label class="form-label" for="email">Email</label>
+        <input   name="email" class="form-control"  id="email"
+            type="text"
+            formControlName="email"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.email?.errors }"
+            placeholder="Enter email"
+        >
+        <div *ngIf="submitted && f.email?.errors" class="invalid-feedback">
+            <div *ngIf="f.email.errors?.required">Email is required</div>
+            <div *ngIf="f.email.errors?.email">
+            Email must be a valid email address
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mb-3 form-group" style="text-align: left;">
+        <label class="form-label" for="password">Password</label>
+        <input  name="password" class="form-control" 
+            type="password" id="password" 
+            formControlName="password" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.password?.errors }"
+            placeholder="Password"
+        >
+        <div
+        *ngIf="submitted && f.password?.errors"
+        class="invalid-feedback"
+        >
+            <div *ngIf="f.password?.errors.required">Password is required</div>
+            <div *ngIf="f.password?.errors.minlength">
+            Password must be at least 6 characters
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mb-3">
+        <div class="row">
+            <div class="col-sm-12 offset-sm-0" style="margin-top: 19px;">
+                <button  class="btn btn-primary" type="submit"
+                style="max-width: 75%;padding-right: 40px;padding-left: 40px;background: #d85f30;border-top-color: #d85f30;border-right-color: #d85f30;border-bottom-color: #d85f30;border-left-color: #d85f30;">
+                Login
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="row text-center">
+            <div class="col" style="font-size: 25px;">
+            <small style="font-size: 16px;">Don't have an account ?</small>
+            <!-- Add a route to sign up -->
+            <a  routerLink="/register" class="btn btn-link" role="button" style="font-size: 16px;">Sign Up</a>
+            </div>
+        </div>
+    </div>
+    </form>
+
+
+</div>
+</section>

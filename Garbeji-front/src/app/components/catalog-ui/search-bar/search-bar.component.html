@@ -1,0 +1,16 @@
+<div class="container-fluid d-flex justify-content-center el" style="padding-top: 70px; padding-left: 30px">
+    <div class="row d-flex justify-content-center">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <form>
+                    <input [ngModel]="keyword" (ngModelChange)="keywordSearch($event)" name="searchbar" class="sinput" type="text" placeholder="Recherche..">
+                </form>
+            </div>
+            <div class="row mx-auto" style="margin-top: 20px;">
+                <div class="col d-flex justify-content-center" style="margin: 3px;" *ngFor="let category of categories">
+                    <button type="button" class="btn btn-light" (click)="chosenCategory(category)">{{category}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

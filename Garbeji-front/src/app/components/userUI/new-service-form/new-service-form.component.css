@@ -1,0 +1,36 @@
+
+
+.submit{
+    background-color: #d85f30;
+    color: white;
+    outline: none;
+    box-shadow:none !important;
+    
+}
+
+
+
+input:focus , input:active{
+    outline: none;
+    box-shadow:none !important;
+    border: 1px solid black !important ;
+}
+
+label{
+    color: grey;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+
+.typography-line {
+    margin-top: 2rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 2rem;
+  }
+  
+  .typography-line h2{
+      font-weight: bold;
+  }

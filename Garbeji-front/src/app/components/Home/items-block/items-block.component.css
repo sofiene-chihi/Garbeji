@@ -1,0 +1,35 @@
+app-item-card{
+    display: inline-block;
+    padding-right: 5rem;
+    padding-left: 3rem;
+}
+
+h3{
+    margin-left: 5px;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    color: var(--third-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+button{
+    margin: auto;
+    margin-top: 1rem;
+    color: #d85f30;
+    border-radius: 20px;
+    background-color: white;
+    border: #d85f30 1px solid;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #d85f30;
+    color: white;
+    border: #d85f30 1px solid;
+
+}

@@ -1,0 +1,56 @@
+<form [formGroup]="newServiceForm" (ngSubmit)="onSubmit(newServiceForm , formDirective)" #formDirective="ngForm" >
+  <div class="form-row">
+    <div class="col-md-4 pr-1">
+      <label>Name </label>
+      <input type="text" class="form-control  " id="name"
+        formControlName="name" name="name">  
+
+    </div>
+
+    <div class="col-md-4 px-1">
+      <label>category </label>
+      <input type="text" class="form-control  " id="category"
+        formControlName="category" name="category">  
+
+    </div>  
+  </div>
+
+
+  <div class="form-row">
+    <div class="col-md-5  px-1">
+      <label>Price </label>
+      <input type="number" class="form-control  " id="price"
+        formControlName="price" name="price">  
+
+    </div>
+    <div class="col-md-7  px-1">
+      <label>Worktime </label>
+      <input type="text" class="form-control  " id="worktime"
+        formControlName="worktime" name="worktime">  
+    
+    </div>
+  </div>
+
+  
+  <div class="form-row">    
+    <div class=" col-md-7 px-1">
+      <div class="form-group">
+        <label>Description </label>
+        <textarea type="text" class="form-control  " id="description"
+          formControlName="description" name="description">  
+        </textarea>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="row pt-4" >
+    <div class=" ml-auto mr-auto">
+      <button type="submit" class="btn  btn-round submit" >
+       post 
+      </button>
+    </div>
+  </div>
+</form>

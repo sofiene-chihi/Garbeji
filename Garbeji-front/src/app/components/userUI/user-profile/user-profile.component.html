@@ -1,0 +1,106 @@
+<div class="container" style="margin-top: 5rem;">
+    <div class=" d-lg-flex justify-content-lg-center" style="height:350px" >
+        <div class="row d-inline-flex d-lg-flex d-xxl-flex justify-content-lg-start align-items-lg-start justify-content-xxl-center"
+        style="text-align: left;width: 100% ">
+            <img src="../../../../assets/images/bg.jpg" alt="Could be portrait or landscape"
+            style=" max-height:100%; object-fit: cover;"/>
+        </div>
+    </div>
+
+    
+    <div class=" row  gutters-sm mt-4 mr-6">
+        <div class="  d-lg-flex d-xxl-flex  align-items-lg-start "
+            style="text-align: left;width: 100% ; ">
+
+            <div class="col-md-4 mb-3 " style="margin-left: 5px;">
+                <app-card [profile]="profile"></app-card>
+            </div>
+
+            <div class=" col " style="margin-left: 2%;" >
+                <ng-container *ngIf="profile">
+                    <app-details [profile]="profile"></app-details>
+                    <app-socials></app-socials> 
+                </ng-container>
+            </div>
+        </div>
+    </div>
+
+<ul class="container nav nav-tabs" id="myTab" role="tablist"  >
+    <li class="nav-item" *ngFor="let link of links">
+        <button class="nav-link " id="link"  [routerLink]="link" role="tab"routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+            {{link}}
+        </button>
+    </li>
+</ul>
+</div>
+
+
+<div class="container">
+    <router-outlet></router-outlet>
+    <div style="margin-bottom: 2rem;"></div>
+</div>
+
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Edit Profile</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="profileForm" (ngSubmit)="onSubmit(profileForm , formDirective)" #formDirective="ngForm">
+                <div class="mb-3">
+
+                    <div class="text-center"><img class="rounded-circle img-fluid" src="../../../../assets/images/hana.png"
+                            loalding="auto"
+                            style="width: 200px;height:150px; border-radius: 102px;filter: blur(0px);border-top-style: solid;border-top-color: #333e5c;border-right-style: solid;border-right-color: #bac4c0;border-bottom: 3px solid #d85f30 ;border-left-style: solid;border-left-color: #fdfdfd;" />
+                            <label for="file-upload" class="custom-file-upload"
+                            style="color: #333e5c; right:10%; font-size:1.5rem;" >
+                                edit
+                            </label>
+                            <input type="file"  id="file-upload">
+                    </div>
+                </div>
+    
+                <div class="mb-4">
+                    <label>FirstName </label>
+                    <input type="text" class="form-control  " id="firstname"
+                        formControlName="firstname" name="firstname">      
+        
+                </div>
+                <div class="mb-4">
+                    <label>LastName </label>
+                    <input type="text" class="form-control  " id="lastname"
+                    formControlName="lastname" name="lastname">      
+                    
+                </div>
+                <div class="mb-4">
+                    <label>Profession </label>
+                    <input type="text" class="form-control  " id="profession"
+                    formControlName="profession" name="profession">      
+       
+                </div>
+
+                <div class="mb-4">
+                    <label>Phone </label>
+                    <input type="text" class="form-control  " id="phone"
+                    formControlName="phone" name="phone">      
+                </div>
+                
+                <button class="btn btn-primary center" type="submit"
+                    style="background: #d85f30;border-style: none;border-bottom-style: none; margin-right: 1%;">
+                    Update
+                </button>
+                
+                <button type="button"  class="btn btn-secondary" 
+                style="background: #d85f30;border-style: none;border-bottom-style: none;"
+                data-bs-dismiss="modal">
+                Cancel
+            </button>
+            </form>
+        </div>
+    </div>
+  </div>
+</div>

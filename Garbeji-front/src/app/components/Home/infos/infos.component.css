@@ -1,0 +1,79 @@
+.col-sm{
+    text-align: center;
+    margin: 4rem;
+}
+
+
+.first-element, .second-element{
+    position: relative;
+    border: 1px solid #d85f30;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.first-element::before {
+    content: "";
+    background-image: url("../../../../assets/images/worker1.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+}
+
+.second-element::before {
+    content: "";
+    background-image: url("../../../../assets/images/worker2.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+}
+
+
+p {
+    position: relative;
+    color: var(--fourth-color);  
+    text-align: center;
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    position: relative;
+    margin-top: 2rem;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #d85f30;
+    border: #d85f30 1px solid;
+    font-weight: bold;}
+
+button:hover{
+    background-color: #d85f30;
+    color: white;
+    border: #d85f30 1px solid;
+
+}
+
+h2{
+    margin-top: 4rem;
+    position: relative;
+    color: var(--fourth-color);  
+    text-align: center;
+    font-weight: bold;
+}
+
+h3{
+    font-weight: bold;
+    color: var(--third-color);
+
+}

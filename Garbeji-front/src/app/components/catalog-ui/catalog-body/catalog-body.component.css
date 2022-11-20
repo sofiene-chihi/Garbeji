@@ -1,0 +1,26 @@
+@media (max-width :624px) {
+    .jobscol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;        
+    }   
+    .jobsrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    } 
+}
+
+.jobsrow{
+    margin: auto;
+}
+
+.lign{
+    background-color: var(--first-color);
+}
+
+.jobs{
+    background-color: var(--first-color);
+}

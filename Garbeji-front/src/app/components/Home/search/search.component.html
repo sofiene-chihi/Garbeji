@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="first-block">
+            <h3>Je cherche un : </h3>
+                <input type="text" placeholder="Worker" class="form-control" aria-label="Text input with segmented dropdown button">
+        </div>
+        <div class="container job-buttons">
+            <div class="row">
+              <div class="col-sm-4" *ngFor="let job of jobs">
+                <button type="button" class="btn btn-outline-primary">{{job}}</button>
+            </div>
+            </div>
+          </div>
+
+    </div>
+      <div class="col-sm">
+        <img src="../../../../assets/images/img2.png" alt="workers are here in the club">
+        <div class="container login-buttons">
+            <div class="row">
+              <div class="col-sm-6">
+                <button type="button" class="btn btn2 btn-outline-primary" routerLink="/register">s'inscrire</button>
+            </div>
+            <div class="col-sm-6">
+              <button type="button" class="btn btn1 btn-outline-primary" routerLink="/login">se connecter</button>
+          </div>
+            </div>
+          </div>
+    </div>
+    </div>
+</div>
