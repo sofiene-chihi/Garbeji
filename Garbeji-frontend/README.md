@@ -1,27 +1,17 @@
 # Garbeji
+<p align="center">
+<img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="160"/>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+A web project, The frontend is made with Angular in which we can find web vues and services for : 
 
-## Development server
+* Home page : showing the services that our project can provide
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Login page : for users to authenticate and access their accounts
 
-## Code scaffolding
+* Register page : for new users to create their accounts
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Profile page : each user can check his profile and udpate his personal data
 
-## Build
+The backend for this project can be found in this repo : https://github.com/sofiene-chihi/Garbeji-backend
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
