@@ -1,4 +1,4 @@
-# Garbeji
+# Garbeji Frontend
 <p align="center">
 <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="160"/>
 </p>
