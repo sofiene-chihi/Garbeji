@@ -13,4 +13,4 @@ A web project, The frontend is made with Angular in which we can find web vues a
 
 * Profile page : each user can check his profile and udpate his personal data
 
-The backend for this project can be found in this repo : https://github.com/sofiene-chihi/Garbeji-backend
+* Services page : each user can search for a service provider by name / service ..
